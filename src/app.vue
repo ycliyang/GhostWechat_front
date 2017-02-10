@@ -1,12 +1,22 @@
 <template>
   <div>
     <h1>微信助手</h1>
-    <p>ghost wechat</p>
+    <p>Use Vue 2.0 Today!</p>
+    <el-button @click.native="startHacking">Let's do it</el-button>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'app'
+    name: 'app',
+    methods: {
+      startHacking() {
+        this.$notify({
+          title: 'It Works',
+          message: 'We have laid the groundwork for you. Now it\'s your time to build something epic!',
+          duration: 6000
+        });
+      }
+    }
   };
 </script>

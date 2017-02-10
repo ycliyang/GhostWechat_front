@@ -25,12 +25,11 @@ cooking.set({
   publicPath: '/dist/',
   assetsPath: 'static',
   urlLoaderLimit: 10000,
-  static: true,
   extractCSS: '[name].[contenthash:7].css',
   alias: {
     'src': path.join(__dirname, 'src')
   },
-  extends: ['vue2', 'lint', 'sass', 'autoprefixer']
+  extends: ['vue2', 'lint', 'saladcss']
 });
 
 module.exports = cooking.resolve();
